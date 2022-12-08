@@ -13,11 +13,14 @@ import sys
 c=0
 p=0
 u=0
-k=0
-e=int(input("chose the level of complexity:"))                          #Код не очень красивый, но все работает. Деление решил не добовлять. Randint маленькие цифры для
-for i in range(1,10,2):                                                 #проверки
-    r=randint(2,11)
+k=0  
+e=int(input("chose the level of complexity:"))                                                                        #Код не очень красивый, но все работает. Деленее решил не добовлять. Randint маленькие цифры для
+for i in range(1,10,2):                                                                                               #проверки
+    r=randint(2,11)                                                                                                   #
     d=randint(1,10)
+    if e>3:
+       print("Other levels are still to difficult for me,choose something easer please")
+       e=int(input("chose the level of complexity:"))
     if e==1:
         print(f"{r}+{d}")
         i=int(float(input("")))
@@ -27,9 +30,6 @@ for i in range(1,10,2):                                                 #про�
     if e==3:
         print(f"{r}^2")
         i=int(float(input("")))
-    if e>3:
-        print("Other levels are still to difficult for me,choose something easer please")
-        sys.exit()
     if i==r+d or i==r*d or i==r**2:
         print("you are good!")
         u+=1
@@ -37,7 +37,7 @@ for i in range(1,10,2):                                                 #про�
         print("you'v just made a mistake, but you'a good!")
         c+=1
     k+=1
-print("\nCorrect:{}\nNon-correct:{}".format(u,c))
+print("\nyou are good!:{}\nyou'v just made a mistake, but you'a good!:{}".format(u,c))
 point=u/k*100
 print("point",point)
 try:
@@ -52,4 +52,4 @@ elif point>=75 and point<=89:
     mark="your mark is 4"
 elif point>=90:
     mark="your mark is 5"
-print(mark)
+print(mark) 
