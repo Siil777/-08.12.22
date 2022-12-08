@@ -14,15 +14,15 @@ c=0
 p=0
 u=0
 k=0  
-e=int(input("chose the level of complexity:"))                                                                        #Код не очень красивый, но все работает. Деленее решил не добовлять. Randint маленькие цифры для
+e=int(input("chose the level of complexity:"))                                                                        #Код не очень красивый, но все работает. Деление решил не добовлять. Randint маленькие цифры для
 for i in range(1,10,2):                                                                                               #проверки
-    r=randint(2,11)                                                                                                   #
-    d=randint(1,10)
-    if e>3:
-       print("Other levels are still to difficult for me,choose something easer please")
-       e=int(input("chose the level of complexity:"))
-    if e==1:
-        print(f"{r}+{d}")
+    r=randint(2,11)                                                                                                   #Вначале использовал Sys.exit() если уровень больше 3.
+    d=randint(1,10)                                                                                                   #это было неудобно потому-что программа сразу заканчивалась.
+    if e>3:                                                                                                           #теперь после ввода несуществующего уровня, программа сразу возврощает вас                                                                                                        
+       print("Other levels are still to difficult for me,choose something easer please")                              # в выбору уровня.
+       e=int(input("chose the level of complexity:"))                                                                 #примеры на первый взгляд очень, легкие но, что если представил что  эта программа
+    if e==1:                                                                                                          # написана для первокласников. Если 1 класник знает ско-ко 7^2 или 8^2
+        print(f"{r}+{d}")                                                                                             #это уже показатель. 
         i=int(float(input("")))
     if e==2:
         print(f"{r}*{d}")
