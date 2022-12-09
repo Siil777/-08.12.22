@@ -29,7 +29,7 @@ for i in range(1,10,2):
     d=randint(1,10)
                                                                                                                         
     while e>3:                                                                                                                                                                                                                 
-        print("Other levels are still to difficult for me,choose another one 1,2, or 3 please")                         
+        print("Other levels are still too difficult for me,choose another one 1,2, or 3 please")                         
         e=int(input("chose the level of complexity:"))                                                                  
     if e==1:                                                                                                           
         print(f"{r}+{d}+{r}")                                                                                               
