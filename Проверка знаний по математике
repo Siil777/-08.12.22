@@ -61,4 +61,8 @@ if a.lower()=="yes" or "no":
     elif a=="no":
         print("taht's a pity =(")
     elif a!="yes" or "no":
-        sys.exit()
+        sys.
+
+
+       
+
