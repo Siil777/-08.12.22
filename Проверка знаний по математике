@@ -70,7 +70,7 @@ if a.lower()=="yes" or "no":
     if a=="yes":
         print("I'm the Python your best friend!")
     elif a=="no":
-        print("taht's a pity =(")
+        print("taht's a pity =[")
     elif a!="yes" or "no":
         sys.exit()
 
