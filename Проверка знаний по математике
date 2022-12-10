@@ -16,63 +16,66 @@
 #75-90% - Hinne 4
 #>90% - Hinne 5
 
-
-from random import randint 
+from random import randint
+import random
 import sys
 c=0
-p=0
-u=0                                                                                                                     
-k=0  
-e=int(input("chose the level of complexity:"))                                                                          
-for i in range(1,10,2):                                                                                                 
-    r=randint(2,11)                                                                                                     
-    d=randint(1,10)
-                                                                                                                        
-    while e>3 or e<0 or e==0:                                                                                                                                                                                                                 
-        print("Other levels are still too difficult for me,choose another one 1,2, or 3 please")                         
-        e=int(input("chose the level of complexity:"))                                                                  
-    if e==1:                                                                                                           
-        print(f"{r}+{d}+{r}")                                                                                               
-        i=int(float(input("")))
-    if e==2:
-        print(f"{r}*{d}+{r}")
-        i=int(float(input("")))
-    if e==3:
-        print(f"{d}+{r}^2")
-        i=int(float(input("")))
-    if i==r+d+r or i==r*d+r or i==d+r**2:
-        print("you are good!")
-        u+=1
-    else:
-        print("you'v just made a mistake, but you'a good!")
-        c+=1
-    k+=1
+k=0
+u=0
+e=int(float(input("choose the level of complexity:")))
+list=['+','-']
+list2=['*']
+list3=['/']
+for i in range(5):
+	r=random.choice(list)
+	j=random.choice(list2)
+	m=random.choice(list3)
+	A=randint(1,10)
+	B=randint(1,10)
+	while e>3 or e<0 or e==0:
+		print("other levels are still difficult for me")
+		e=int(float(input("choose the level of complexity:")))
+	if e==1:
+		print(f"{A}{r}{B}")
+		i=int(float(input("")))
+	if e==2:
+		print(f"{A}{j}{B}{r}{A}")
+		i=int(float(input("")))
+	if e==3:
+		print(f"{A}{m}{B}{j}{A}{r}{B}^2")
+		i=int(float(input("")))
+	if i==A+B or i==A-B or i==A*B-A or i==A*B+A or e==A/B*A+B or i==A/B-A+A or i==A/B+A*B**2:
+		print("you'a good")
+		u+=1
+	else:
+		print("you'a made a mistake, but you,a good")
+		c+=1
+	k+=1
 print("\nCorrect:{}\nNon-correct:{}".format(u,c))
-point=u/k*100
-print("point",point)
+p=u/k*100
+print(f"point {p}")
 try:
-    point=u/k*100
+	p=u/k*100
 except:
-    print("error")
-if point<=59:
-    mark="your mark is 2"
-elif point>=60 and point<=74:
-    mark="your mark is 3"
-elif point>=75 and point<=89:
-    mark="your mark is 4"
-elif point>=90:
-    mark="your mark is 5"
+		print("")
+if p<=59:
+	mark="your mark is 2"
+elif p>=60 and p<=74:
+	mark="your mark is 3"
+elif p>=75 and p<=89:
+	mark="your mark is 4"
+else:
+	mark="your mark is 5"
 print(mark)
 print()
-print("Would you like to know who am I?")
-a=input("yes or no?:")
-if a.lower()=="yes" or "no":
-    if a=="yes":
-        print("I'm the Python your best friend!")
-    elif a=="no":
-        print("taht's a pity =[")
-    elif a!="yes" or "no":
-        sys.exit()
+print("would you like to know who am I?")
+l=input("no or yes:")
+if l.lower()=="no" or "yes":
+	if l=="yes":
+		print("I'm the Python your best friend!")
+	else:
+		print("that's a pity=[")
+
 
 
        
