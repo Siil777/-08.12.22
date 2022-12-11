@@ -97,7 +97,7 @@ j=0
 while True:
 				j+=1
 				while p>3 or p<0 or p==0:
-					print("take some one easer don't be too overconfident")
+					print("take some one easer don't be too self-confident")
 					p=int(float(input("take your chance with math Test choose the level:")))
 				y=random.choice(selection)
 				x=random.choice(selection1)
