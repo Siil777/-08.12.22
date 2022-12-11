@@ -79,6 +79,7 @@ if l.lower()=="no" or "yes":
 
 Option.2
 # впринципе тоже самое, но все через while True.
+#пытался def convert() использовать для перезапуска, и flag True, пока что не получается.  
 from random import randint
 import random
 selection=['+','-','+']
