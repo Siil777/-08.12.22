@@ -15,6 +15,7 @@
 #60-75% - Hinne 3
 #75-90% - Hinne 4
 #>90% - Hinne 5
+Options.1
 
 from random import randint
 import random
@@ -76,7 +77,72 @@ if l.lower()=="no" or "yes":
 	else:
 		print("that's a pity=[")
 
-
+Option.2
+# впринципе тоже самое, но все через while True.
+from random import randint
+import random
+selection=['+','-','+']
+selection1=['*','+','-']
+selection2=['-']
+l=0
+t=0
+m=0
+e=1,2,3
+p=1,2,3
+p=int(float(input("vali raskusaste:")))
+i=0
+j=0
+while True:
+				j+=1
+				y=random.choice(selection)
+				x=random.choice(selection1)
+				s=random.choice(selection2)
+				A=randint(1,10)
+				B=randint(1,10)
+				if p==1:
+					if int(p)==int(p):
+						if float(p)==float(p):
+							print(f"{A}{y}{B}")
+							i=int(float(input("")))
+				if p==2:
+							print(f"{A}{y}{B}{x}{A}")
+							i=int(float(input("")))
+				if p==3:
+							print(f"{A}{s}{B}{x}{A}{y}{B}^2")
+							i=int(float(input("")))
+				if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A/B*A+B or i==A-B-A or i==A/B-A+B or i==A/B+A*B**2 or i==A/B-A+B:
+					print("good")
+					l+=1
+				else:
+						print("badaple")
+						m+=0
+				t+=1
+				if j==5: 
+					break 
+print("\nCorrect:{}\nNon-correct:{}".format(l,m))
+p=l/t*100
+print(f"point {p}")
+try:
+	p=u/k*100
+except:
+		print("")
+if p<=59:
+	mark="your mark is 2"
+elif p>=60 and p<=74:
+	mark="your mark is 3"
+elif p>=75 and p<=89:
+	mark="your mark is 4"
+else:
+	mark="your mark is 5"
+print(mark)
+print()
+print("would you like to know who am I?")
+l=input("no or yes:")
+if l.lower()=="no" or "yes":
+	if l=="yes":
+		print("I'm the Python your best friend!")
+	else:
+		print("that's a pity=[")
 
 #def convert():
 #	convert():
@@ -86,5 +152,9 @@ if l.lower()=="no" or "yes":
 #		convert()
 #	else:
 #		break
-       
+			
+#flag=True
+#while flag:
+#программа
+#flag = True if input('Начать заново?(Y/N)') == 'Y' else False       
 
