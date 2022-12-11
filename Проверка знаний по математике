@@ -90,7 +90,7 @@ t=0
 m=0
 e=1,2,3
 p=1,2,3
-p=int(float(input("take your chance with math Test choose the level::")))
+p=int(float(input("take your chance with math Test choose the level:")))
 i=0
 j=0
 while True:
