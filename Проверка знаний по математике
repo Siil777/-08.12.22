@@ -82,6 +82,7 @@ Option.2
 #пытался def convert() использовать для перезапуска, и flag True, пока что не получается.  
 from random import randint
 import random
+import sys
 selection=['+','-','+']
 selection1=['*','+','-']
 selection2=['-']
@@ -95,6 +96,9 @@ i=0
 j=0
 while True:
 				j+=1
+				while p>3 or p<0 or p==0:
+					print("take some one easer don't be too overconfident")
+					p=int(float(input("take your chance with math Test choose the level:")))
 				y=random.choice(selection)
 				x=random.choice(selection1)
 				s=random.choice(selection2)
@@ -144,6 +148,8 @@ if l.lower()=="no" or "yes":
 		print("I'm the Python your best friend!")
 	else:
 		print("that's a pity=[")
+
+
 #def convert():
 #	convert():
 #while True:
