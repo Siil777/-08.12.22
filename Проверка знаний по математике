@@ -110,12 +110,12 @@ while True:
 				if p==3:
 							print(f"{A}{s}{B}{x}{A}{y}{B}^2")
 							i=int(float(input("")))
-				if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A/B*A+B or i==A-B-A or i==A/B-A+B or i==A/B+A*B**2 or i==A/B-A+B:
+				if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A-B+A or i==A+B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A/B*A+B or i==A+B+A or i==A-B-A or i==A/B-A+B or i==A/B+A*B**2 or i==A/B-A+B:
 					print("good")
 					l+=1
 				else:
-						print("badaple")
-						m+=0
+					print("badaple")
+					m+=0
 				t+=1
 				if j==5: 
 					break 
@@ -143,7 +143,6 @@ if l.lower()=="no" or "yes":
 		print("I'm the Python your best friend!")
 	else:
 		print("that's a pity=[")
-
 #def convert():
 #	convert():
 #while True:
