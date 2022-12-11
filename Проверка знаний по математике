@@ -77,6 +77,13 @@ if l.lower()=="no" or "yes":
 		print("that's a pity=[")
 
 
-
+#def convert():
+#	convert():
+#while True:
+#	flag=inpit('Again [yes/no]:')
+#	if flag=='yes':
+#		convert()
+#	else:
+#		break
        
 
