@@ -26,7 +26,7 @@ u=0
 e=int(float(input("choose the level of complexity:")))
 list=['+','-','*']
 list2=['-','*','-']
-list3=['/']
+list3=['//']
 for i in range(5):
 	r=random.choice(list)
 	j=random.choice(list2)
@@ -45,7 +45,7 @@ for i in range(5):
 	if e==3:
 		print(f"{A}{m}{B}{j}{A}{r}{B}^2")
 		i=int(float(input("")))
-	if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A/B*A+B or i==A-B-A or i==A/B-A+B or i==A/B+A*B**2 or i==A/B-A+B:
+	if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A-B+A or i==A+B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A//B*A+B or i==A+B+A or i==A-B-A or i==A//B-A+B or i==A//B+A*B**2 or i==A//B-A+B or i==A//B+A+B or i==A-B-A-B**2 or i==A-B+A+B**2:
 		print("you'a good")
 		u+=1
 	else:
