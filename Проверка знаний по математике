@@ -45,7 +45,7 @@ for i in range(5):
 	if e==3:
 		print(f"{A}{m}{B}{j}{A}{r}{B}^2")
 		i=int(float(input("")))
-	if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A-B+A or i==A+B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A//B*A+B or i==A+B+A or i==A-B-A or i==A//B-A+B or i==A//B+A*B**2 or i==A//B-A+B or i==A//B+A+B or i==A-B-A-B**2 or i==A-B+A+B**2:
+	if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A-B+A or i==A+B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A//B*A+B or i==A+B+A or i==A-B-A or i==A//B-A+B or i==A//B+A*B**2 or i==A//B-A+B or i==A//B+A+B or i==A-B-A-B**2 or i==A-B+A+B**2 or i==A//B-A-B**2:
 		print("you'a good")
 		u+=1
 	else:
@@ -115,7 +115,7 @@ while True:
 				if p==3:
 							print(f"{A}{s}{B}{x}{A}{y}{B}^2")
 							i=int(float(input("")))
-				if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A-B+A or i==A+B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A//B*A+B or i==A+B+A or i==A-B-A or i==A//B-A+B or i==A//B+A*B**2 or i==A//B-A+B or i==A//B+A+B or i==A-B-A-B**2 or i==A-B+A+B**2:
+				if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A-B+A or i==A+B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A//B*A+B or i==A+B+A or i==A-B-A or i==A//B-A+B or i==A//B+A*B**2 or i==A//B-A+B or i==A//B+A+B or i==A-B-A-B**2 or i==A//B-A-B**2 or i==A-B+A+B**2:
 					print("good")
 					l+=1
 				else:
