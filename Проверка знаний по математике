@@ -78,7 +78,7 @@ if l.lower()=="no" or "yes":
 		print("that's a pity=[")
 
 Option.2
-# впринципе тоже самое, но все через while True.
+#тоже самое, только через while True.
 #пытался def convert() использовать для перезапуска, и flag True, пока что не получается.  
 from random import randint
 import random
