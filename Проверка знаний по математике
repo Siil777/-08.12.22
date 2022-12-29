@@ -15,7 +15,6 @@
 #60-75% - Hinne 3
 #75-90% - Hinne 4
 #>90% - Hinne 5
-Options.1
 
 from random import randint
 import random
@@ -23,134 +22,63 @@ import sys
 c=0
 k=0
 u=0
-e=int(float(input("choose the level of complexity:")))
-list=['+','-','*']
-list2=['-','*','-']
-list3=['//']
-for i in range(5):
-	r=random.choice(list)
-	j=random.choice(list2)
-	m=random.choice(list3)
-	A=randint(1,10)
-	B=randint(1,10)
-	while e>3 or e<0 or e==0:
-		print("other levels are still difficult for me")
-		e=int(float(input("choose the level of complexity:")))
-	if e==1:
-		print(f"{A}{r}{B}")
-		i=int(float(input("")))
-	if e==2:
-		print(f"{A}{j}{B}{r}{A}")
-		i=int(float(input("")))
-	if e==3:
-		print(f"{A}{m}{B}{j}{A}{r}{B}^2")
-		i=int(float(input("")))
-	if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A-B+A or i==A+B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A//B*A+B or i==A+B+A or i==A-B-A or i==A//B-A+B or i==A//B+A*B**2 or i==A//B-A+B or i==A//B+A+B or i==A-B-A-B**2 or i==A-B+A+B**2 or i==A//B-A-B**2:
-		print("you'a good")
-		u+=1
-	else:
-		print("you'a made a mistake, but you,a good")
-		c+=1
-	k+=1
-print("\nCorrect:{}\nNon-correct:{}".format(u,c))
-p=u/k*100
-print(f"point {p}")
-try:
-	p=u/k*100
-except:
-		print("")
-if p<=59:
-	mark="your mark is 2"
-elif p>=60 and p<=74:
-	mark="your mark is 3"
-elif p>=75 and p<=89:
-	mark="your mark is 4"
-else:
-	mark="your mark is 5"
-print(mark)
-print()
-print("would you like to know who am I?")
-l=input("no or yes:")
-if l.lower()=="no" or "yes":
-	if l=="yes":
-		print("I'm the Python your best friend!")
-	else:
-		print("that's a pity=[")
-
-Option.2
-#тоже самое, только через while True.
-#пытался def convert() использовать для перезапуска, и flag True, пока что не получается.  
-from random import randint
-import random
-import sys
-selection=['+','-','+']
-selection1=['*','+','-']
-selection2=['-','//']
-l=0
-t=0
-m=0
-e=1,2,3
-p=1,2,3
-p=int(float(input("take your chance with math Test choose the level:")))
-i=0
-j=0
 while True:
-				j+=1
-				while p>3 or p<0 or p==0:
-					print("take some one easer don't be too self-confident")
-					p=int(float(input("take your chance with math Test choose the level:")))
-				y=random.choice(selection)
-				x=random.choice(selection1)
-				s=random.choice(selection2)
+	e=int(float(input("choose the level of complexity:")))
+	if e>3:
+		print('take it easy boy')
+	elif e<4:
+		
+		try:
+			list=['+','-','*']
+			list2=['-','*','-']
+			list3=['//']
+			for i in range(5):
+				r=random.choice(list)
+				j=random.choice(list2)
+				m=random.choice(list3)
 				A=randint(1,10)
 				B=randint(1,10)
-				if p==1:
-					if int(p)==int(p):
-						if float(p)==float(p):
-							print(f"{A}{y}{B}")
-							i=int(float(input("")))
-				if p==2:
-							print(f"{A}{y}{B}{x}{A}")
-							i=int(float(input("")))
-				if p==3:
-							print(f"{A}{s}{B}{x}{A}{y}{B}^2")
-							i=int(float(input("")))
-				if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A-B+A or i==A+B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A//B*A+B or i==A+B+A or i==A-B-A or i==A//B-A+B or i==A//B+A*B**2 or i==A//B-A+B or i==A//B+A+B or i==A-B-A-B**2 or i==A//B-A-B**2 or i==A-B+A+B**2:
-					print("good")
-					l+=1
+	
+				if e==1:
+					print(f"{A}{r}{B}")
+					i=int(float(input("")))
+				if e==2:
+					print(f"{A}{j}{B}{r}{A}")
+					i=int(float(input("")))
+				if e==3:
+					print(f"{A}{m}{B}{j}{A}{r}{B}^2")
+					i=int(float(input("")))
+				if i==A+B or i==A*B or i==A-B or i==A-B*A or i==A*B-A or i==A-B+A or i==A+B-A or i==A*B+A or i==A*B*A or i==A-B+A or i==A//B*A+B or i==A+B+A or i==A-B-A or i==A//B-A+B or i==A//B+A*B**2 or i==A//B-A+B or i==A//B+A+B or i==A-B-A-B**2 or i==A-B+A+B**2 or i==A//B-A-B**2:
+					print("you'a good")
+					u+=1
 				else:
-					print("badaple")
-					m+=0
-				t+=1
-				if j==5: 
-					break 
-print("\nCorrect:{}\nNon-correct:{}".format(l,m))
-p=l/t*100
-print(f"point {p}")
-try:
-	p=u/k*100
-except:
-		print("")
-if p<=59:
-	mark="your mark is 2"
-elif p>=60 and p<=74:
-	mark="your mark is 3"
-elif p>=75 and p<=89:
-	mark="your mark is 4"
-else:
-	mark="your mark is 5"
-print(mark)
-print()
-print("would you like to know who am I?")
-l=input("no or yes:")
-if l.lower()=="no" or "yes":
-	if l=="yes":
-		print("I'm the Python your best friend!")
-	else:
-		print("that's a pity=[")
-			
-#flag=True
-#while flag:
-#программа
-#flag = True if input('Начать заново?(Y/N)') == 'Y' else False       
+					print("you'v made a mistake, but you,a good")
+					c+=1
+				k+=1
+			print("\nCorrect:{}\nNon-correct:{}".format(u,c))
+			p=u/k*100
+			print(f"point {p}")
+			try:
+				p=u/k*100
+			except:
+					print("")
+			if p<=59:
+				mark="your mark is 2"
+			elif p>=60 and p<=74:
+				mark="your mark is 3"
+			elif p>=75 and p<=89:
+				mark="your mark is 4"
+			else:
+				mark="your mark is 5"
+			print(mark)
+			print()
+			print("would you like to know who am I?")
+			l=input("no or yes:")
+			if l.lower()=="no" or "yes":
+				if l=="yes":
+					print("I'm the Python your best friend!")
+				else:
+					print("that's a pity=[")
+		except:
+			print('')
 
